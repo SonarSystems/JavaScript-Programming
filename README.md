@@ -1,1 +1,1 @@
-# JavaScript-Programming
+# JavaScript Programming

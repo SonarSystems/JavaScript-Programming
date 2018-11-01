@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			function SetCookie()
+			{
+				document.cookie = "username=frahaan"
+			}
+
+			function GetCookie()
+			{
+				console.log(document.cookie);
+			}
+		</script>
+
+		<script type="text/javascript" src="custom.js"></script>
+	</head>
+
+	<body>
+		<h1 onclick="SetCookie();">Set Cookie</h1>
+
+		<h1 onclick="GetCookie();">Get Cookie</h1>
+
+		<noscript>JS not supported</noscript>
+	</body>
+</html>

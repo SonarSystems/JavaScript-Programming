@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			function AlertClick()
+			{
+				alert("Stop clicking me!!!");
+			}
+
+			function ConfirmClick()
+			{
+				var value = confirm("Are you Batman?");
+
+				console.log(value);
+			}
+		</script>
+
+		<script type="text/javascript" src="custom.js"></script>
+	</head>
+
+	<body>
+		<h1 onclick="AlertClick()">Alert</h1>
+		<h1 onclick="ConfirmClick()">Confirm</h1>
+
+		<noscript>JS not supported</noscript>
+	</body>
+</html>

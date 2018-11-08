@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			var redBox = null;
+			var movementAmount = 0;
+		</script>
+
+		<script type="text/javascript" src="custom.js"></script>
+
+		<style>
+			#RedBox
+			{
+				background-color: red;
+				width: 100px;
+				height: 100px;
+				position: relative;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="RedBox"></div>
+
+		<script type="text/javascript">
+			redBox = document.getElementById("RedBox");
+
+			var animation;
+
+			function EpicMovement()
+			{
+				movementAmount += 1;
+				redBox.style.left = movementAmount + 'px';
+				console.log(redBox.style.left);
+				animation = setTimeout(EpicMovement, 1);
+			}
+
+			EpicMovement();
+
+			//redBox.style.left = "200px";
+		</script>
+		<noscript>JS not supported</noscript>
+	</body>
+</html>

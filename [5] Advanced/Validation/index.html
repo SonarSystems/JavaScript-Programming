@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			function ValidationFunc()
+			{
+				console.log("Woroking");
+				var var1 = document.EpicForm.Username.value;
+
+				console.log(var1);
+				if (var1 === "")
+				{
+					console.log("It is empty");
+				}
+				else if (var1.length < 10)
+				{
+					console.log("Length should be atleast 10");
+				}
+				else
+				{
+					console.log("Fantastic");
+				}
+			}
+		</script>
+
+		<script type="text/javascript" src="custom.js"></script>
+	</head>
+
+	<body>
+		<form name="EpicForm">
+			<input type="text" name="Username" />
+		</form>
+
+		<div onclick="ValidationFunc()">Click Me</div>
+
+		<noscript>JS not supported</noscript>
+	</body>
+</html>

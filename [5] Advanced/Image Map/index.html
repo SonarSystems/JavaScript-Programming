@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			function Image(objectClicked)
+            {
+            	console.log(objectClicked);
+            }
+		</script>
+
+		<script type="text/javascript" src="custom.js"></script>
+
+	</head>
+
+	<body>
+		<img src="planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+		<map name="planetmap">
+		  <area shape="rect"
+		  coords="0,0,82,126"
+		  alt="Sun"
+		  onmouseover="Image('Sun')"
+		  onmouseout="Image('')"
+		  />
+		  <area shape="circle"
+		  coords="90,58,3"
+		  alt="Mercury"
+		  onmouseover="Image('Mercury')"
+		  onmouseout="Image('')" />
+		  <area shape="circle"
+		  coords="124,58,8"
+		  alt="Venus"
+		  onmouseover="Image('Venus')"
+		  onmouseout="Image('')" />
+		</map>
+
+
+		<noscript>JS not supported</noscript>
+	</body>
+</html>
